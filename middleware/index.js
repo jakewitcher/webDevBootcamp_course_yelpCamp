@@ -1,6 +1,6 @@
-var Comment = require("../models/comment");
-var Campground = require("../models/campground");
-var middlewareObj = {};
+const   Comment         = require("../models/comment"),
+        Campground      = require("../models/campground"),
+        middlewareObj   = {};
 
 middlewareObj.isLoggedIn = function isLoggedIn(req, res, next) {
     if(req.isAuthenticated()) {
