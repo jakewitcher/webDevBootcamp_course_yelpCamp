@@ -29,7 +29,7 @@ app.use(flash());
 
 //PASSPORT CONFIGURATION
 app.use(require("express-session")({
-    secret: "And the word became flesh and dwelt among us",
+    secret: process.env.SESSION_SECRET,
     resave: false,
     saveUninitialized: false
 }));
